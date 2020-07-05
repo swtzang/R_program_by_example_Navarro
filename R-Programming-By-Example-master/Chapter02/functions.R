@@ -14,7 +14,7 @@ library(ggbiplot)
 library(corrplot)
 library(progress)
 
-source("../chapter-01/functions.R")
+source("R-Programming-By-Example-master/Chapter01/functions.R")
 
 prepare_data <- function(path, complete_cases = FALSE) {
     data <- read.csv(path)
@@ -270,3 +270,4 @@ remove_unnecessary_education_variables <- function(names) {
     names[["L4Quals_plus"]] <- FALSE
     return(names)
 }
+
